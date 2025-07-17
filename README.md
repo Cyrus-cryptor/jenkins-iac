@@ -1,7 +1,7 @@
-# Jenkins Infrastruct as Code (IAC)
+# Jenkins Infrastructure as Code (IAC)
   - configuration as code (``casc``)
   - manager plugins with ``plugins.txt``
-  
+
 ## Running Jenkins with Docker
 
 To run Jenkins with the Configuration as Code setup:
@@ -20,5 +20,9 @@ This will:
 - Set the CASC configuration path
 - Expose Jenkins on port 8080
 - Expose Jenkins agent port on 50000
+
+## Plugin Installation
+
+The Jenkins Docker image automatically runs `jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt` during container startup when it finds a `plugins.txt` file. You don't need to run this command manually - Jenkins will automatically install all plugins listed in `plugins.txt` during initialization.
 
 Access Jenkins at: http://localhost:8080
