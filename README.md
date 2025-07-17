@@ -1,5 +1,7 @@
-# Jenkins Configuration as Code (CASC)
-
+# Jenkins Infrastruct as Code (IAC)
+  - configuration as code (``casc``)
+  - manager plugins with ``plugins.txt``
+  
 ## Running Jenkins with Docker
 
 To run Jenkins with the Configuration as Code setup:
